@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+      <link rel="stylesheet" href="css/main.css">
+    <title>API</title>
+</head>
+<body>
+    <header class="bg-blue-500 p-5 flex items-center gap-[530px]">
+        <a href="#" class="font-bold text-[22px]">Products</a>
+        <ul class="category-list flex items-center gap-20"></ul>
+    </header>
+    <main>
+        <section>
+          <div class="p-5">
+            <input class="search-input w-[350px] rounded-[60px] outline-0 bg-white h-[50px] pl-6 pr-6 placeholder:text-sky-900" type="text" placeholder="search...">
+          </div>
+           <div class="flex justify-between">
+            <ul class="products-list w-[70%] h-[558px] flex justify-between flex-wrap gap-[50px] w-[1200px] mx-auto p-5 overflow-y-auto"></ul>
+            <div class="item-inspect w-[30%] bg-slate-400 h-[558px] text-white px-[20px]">
+
+           </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+<script src="js/main.js"></script>
+</html>
